@@ -4,21 +4,14 @@ import pandas as pd
 from scripts.feature_fetcher import get_customer_feature
 
 # Load artifacts
-model = joblib.load(
-    r"D:\ML PRoject\home_credit_data\models\xgb_model.pkl"
-)
-
-feature_columns = joblib.load(
-    r"D:\ML PRoject\home_credit_data\models\feature_columns.pkl"
-)
-
-label_encoders = joblib.load(
-    r"D:\ML PRoject\home_credit_data\models\label_encoders.pkl"
-)
+model = joblib.load(r"D:\ML PRoject\home_credit_data\models\xgb_model.pkl")
+feature_columns = joblib.load(r"D:\ML PRoject\home_credit_data\models\feature_columns.pkl")
+label_encoders = joblib.load(r"D:\ML PRoject\home_credit_data\models\label_encoders.pkl")
+num_imputer = joblib.load(r"D:\ML PRoject\home_credit_data\models\num_imputer.pkl")
+cat_imputer = joblib.load(r"D:\ML PRoject\home_credit_data\models\cat_imputer.pkl")
 
 
 def predict_customer(customer_id):
-
     df = get_customer_feature(customer_id)
 
     if len(df) == 0:
