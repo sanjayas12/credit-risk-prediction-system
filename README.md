@@ -6,7 +6,7 @@ The solution is built as an end-to-end ML system using PostgreSQL, XGBoost, and 
 ---
 
 **#Architecture Diagram**
-![Architecture](docs/architecture_diagram.png)
+docs/architecture_diagram.png
 
 ## Business Problem
 Financial institutions face significant losses when customers fail to repay loans.
