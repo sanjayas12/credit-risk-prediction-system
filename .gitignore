@@ -13,6 +13,8 @@ data/
 *.csv
 *.zip
 *.pkl
+data/
+models/
 
 Screenshofts/
 
