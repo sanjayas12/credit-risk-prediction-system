@@ -5,6 +5,9 @@ This project predicts whether a loan applicant is likely to default on a loan us
 The solution is built as an end-to-end ML system using PostgreSQL, XGBoost, and FastAPI.
 ---
 
+**#Architecture Diagram**
+![Architecture](docs/architecture_diagram.png)
+
 ## Business Problem
 Financial institutions face significant losses when customers fail to repay loans.
 The objective of this project is to predict customer default risk and classify applicants as:
@@ -102,3 +105,6 @@ Metrics used:
 ## Author
 Sanjay
 Data Engineer | Aspiring Data Scientist
+
+
+
